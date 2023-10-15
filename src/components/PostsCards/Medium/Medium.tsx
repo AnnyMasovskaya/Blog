@@ -1,5 +1,5 @@
 import React from "react";
-import { Post } from "../../../api/posts/getPost";
+import { Post } from "../../../api/posts/getArticle";
 import Typography from "../../Typography/Typography";
 import PostActions from "../PostActions/PostActions";
 import styles from "./Medium.module.css";

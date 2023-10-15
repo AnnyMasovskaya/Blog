@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-import { Post } from "../../api/posts/getPost";
+import { Post } from "../../api/posts/getArticle";
 import {
   getArticlesThunk,
   getArticleThunk,

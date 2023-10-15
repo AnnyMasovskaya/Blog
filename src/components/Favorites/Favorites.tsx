@@ -7,17 +7,20 @@ import {
   getArticlesSlice,
   getFavoritesArticles,
 } from "../../store/posts/posts.selectors";
-import { Post } from "../../api/posts/getPost";
+import { Post } from "../../api/posts/getArticle";
 
 interface FavoritesProps {}
 
 const Favorites: React.FC<FavoritesProps> = () => {
   const { articles } = useSelector(getArticlesSlice);
   const favoritesPosts = useSelector(getFavoritesArticles);
-  const savedFavorites = localStorage.getItem("fav");
-  const savedFavoritesIds = savedFavorites ? savedFavorites.split(",") : [];
+  const savedFavoritesJSON = localStorage.getItem("fav");
+  const savedFavorites = savedFavoritesJSON
+    ? JSON.parse(savedFavoritesJSON)
+    : [];
+
   const favoritePostsToShow = articles.filter((post) =>
-    savedFavoritesIds.includes(String(post.id))
+    savedFavorites.includes(String(post.id))
   );
 
   return (

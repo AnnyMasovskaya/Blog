@@ -1,8 +1,10 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { RootState } from "..";
 import { getArticlesSlice, getBlogsSlice } from "./posts.selectors";
-import { getArticles, getBlogs } from "../../api/posts/getPosts";
-import { getArticle, getBlog, Post } from "../../api/posts/getPost";
+import { getArticles } from "../../api/posts/getArticles";
+import { getArticle, Post } from "../../api/posts/getArticle";
+import { getBlogs } from "../../api/posts/getBlogs";
+import { getBlog } from "../../api/posts/getBlog";
 
 export const getArticlesThunk = createAsyncThunk(
   "blog/getArticlesThunk",

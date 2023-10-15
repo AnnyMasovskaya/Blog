@@ -8,7 +8,7 @@ import { AppDispatch } from "../../store";
 import { getSlice } from "../../store/user/user.selectors";
 import Typography from "../Typography/Typography";
 import { getArticlesThunk } from "../../store/posts/posts.actions";
-import { Post } from "../../api/posts/getPost";
+import { Post } from "../../api/posts/getArticle";
 import { getArticlesSlice } from "../../store/posts/posts.selectors";
 import { setSearch } from "../../store/posts/posts.reducer";
 import { Link, useNavigate } from "react-router-dom";

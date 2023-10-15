@@ -22,7 +22,6 @@ const SignUp: React.FC = () => {
   const [values, setValues] = useState(initialValues);
   const [errors, setErrors] = useState<SignUpUserInfoErrors>({});
   const inputRef = useRef<HTMLInputElement | null>(null);
-  const [isSnackbarOpen, setIsSnackbarOpen] = useState(false);
 
   const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -42,7 +41,6 @@ const SignUp: React.FC = () => {
     saveUserToLocalStorage(values);
     setValues(initialValues);
     setErrors({});
-    setIsSnackbarOpen(true);
   };
 
   const validateSignUpForm = (

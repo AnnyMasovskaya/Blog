@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import styles from "./PostActions.module.css";
 import Button from "../../Button/Button";
 import Icon from "../../Icon/Icon";
-import { Post } from "../../../api/posts/getPost";
+import { Post } from "../../../api/posts/getArticle";
 import { togglePostIsFavorite } from "../../../store/posts/posts.reducer";
 import { getSlice } from "../../../store/user/user.selectors";
 
