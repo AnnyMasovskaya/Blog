@@ -1,0 +1,25 @@
+.iconsWrapper {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.iconSocial {
+  height: 24px;
+}
+
+a {
+  cursor: pointer;
+  display: block;
+}
+
+.aWrapp {
+  background-color: #3130371a;
+  border-radius: 5px;
+  width: 60px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

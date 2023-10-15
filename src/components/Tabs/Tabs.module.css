@@ -1,0 +1,23 @@
+.wrapper {
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.button {
+  border-radius: 0px;
+  background-color: transparent;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button.active {
+  border-bottom: 2px solid var(--text-primary);
+}

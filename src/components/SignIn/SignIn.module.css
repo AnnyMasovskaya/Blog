@@ -1,0 +1,7 @@
+.form {
+  width: 350px;
+  padding: 12px;
+  margin: 0 auto;
+  background-color: var(--post-bg-color);
+  border-radius: 8px;
+}

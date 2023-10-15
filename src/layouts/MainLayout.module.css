@@ -1,0 +1,27 @@
+.app {
+  background-color: var(--main-bg-color);
+}
+
+.header {
+  height: 84px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  box-sizing: border-box;
+  border-top: 1px solid var(--border-color);
+}
+
+.wrapper {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main {
+  margin: 60px 0;
+  min-height: calc(100vh - (84px + 90px + 120px));
+}

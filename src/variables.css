@@ -1,0 +1,25 @@
+:root {
+  --main-bg-color: #f3f3f3;
+  --post-bg-color: #ffffff;
+  --header-bg-color: #ffffff;
+  --icon-color: #ffffff;
+  --text-primary: #313037;
+  --text-secondary: rgba(49, 48, 55, 0.5);
+  --text-error: rgb(226, 39, 39);
+  --border-color: rgba(49, 48, 55, 0.1);
+  --input-focus-border-color: rgba(49, 48, 55, 0.5);
+  --input-error-border-color: rgba(226, 89, 39, 0.7);
+}
+
+body[data-theme="dark"] {
+  --main-bg-color: #313037;
+  --post-bg-color: rgba(255, 255, 255, 0.1);
+  --header-bg-color: rgba(255, 255, 255, 0.1);
+  --icon-color: rgba(255, 255, 255, 0.1);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.5);
+  --text-error: rgb(226, 39, 39);
+  --border-color: rgba(255, 255, 255, 0.1);
+  --input-focus-border-color: rgba(255, 255, 255, 0.7);
+  --input-error-border-color: rgba(226, 89, 39, 0.7);
+}

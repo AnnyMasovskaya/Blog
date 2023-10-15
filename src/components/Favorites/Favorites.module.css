@@ -1,0 +1,10 @@
+.mediumPosts {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+}
+
+.mediumPost {
+  flex: 0 0 calc(100% / 3 - 36px);
+  margin: 12px;
+}
